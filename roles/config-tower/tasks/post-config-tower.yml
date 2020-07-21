@@ -6,7 +6,7 @@
     state: present
     tower_config_file: "ansible.cfg"
     scm_type: git
-    scm_credential:
+    #scm_credential:
     scm_branch: master
     scm_url: "{{ github_repo }}"
     tower_host: tower1.{{tower_GUID}}.example.opentlc.com
