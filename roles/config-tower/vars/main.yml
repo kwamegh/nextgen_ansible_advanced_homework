@@ -1,10 +1,10 @@
 ---
 # vars file for roles/config-tower
-org_name: Default 
-scm_branch: master 
+org_name: Default
+scm_branch: master
 scm_url: "{{ github_repo }}"
 proj_name: "00_Homework Assignment"
-user_name: admin 
+user_name: admin
 password: r3dh4t1!
 ssh_cred_name: "Connect_to_workstation"
 user_cred_name: "cloud-user"
@@ -43,3 +43,4 @@ job_template_smoke_aws: "10_Smoke test Prod env"
 aws_smoke_app_playbook: site-smoketest-aws.yml
 
 path_to_opentlc_key: hw_id_rsa.pem
+github_repo: "https://github.com/kwamegh/nextgen_ansible_advanced_homework.git"
