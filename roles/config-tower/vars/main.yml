@@ -42,4 +42,4 @@ aws_cred_name: "Creds for AWS instances"
 job_template_smoke_aws: "10_Smoke test Prod env"
 aws_smoke_app_playbook: site-smoketest-aws.yml
 
-path_to_opentlc_key: hw_id_rsa.pem
+path_to_opentlc_key: ~/hw_id_rsa.pem
