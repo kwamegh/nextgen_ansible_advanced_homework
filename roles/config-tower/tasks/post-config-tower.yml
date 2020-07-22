@@ -71,7 +71,7 @@
     tower_username: "{{ user_name }}"
     tower_password: "{{ password }}"
     tower_verify_ssl: no
-    ssh_key_data: /root/secret.pem
+    # ssh_key_data: /root/.ssh/mykey.pem
     username: "{{ opentlc_login }}"
 
 - name: Remove secret (the private ssh key)
