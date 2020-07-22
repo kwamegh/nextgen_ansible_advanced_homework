@@ -42,5 +42,6 @@ aws_cred_name: "Creds for AWS instances"
 job_template_smoke_aws: "10_Smoke test Prod env"
 aws_smoke_app_playbook: site-smoketest-aws.yml
 
-path_to_opentlc_key: hw_id_rsa.pem
+tower_guid: "f5a0"
+path_to_opentlc_key: "{{ tower_guid }}.pem"
 github_repo: "https://github.com/kwamegh/nextgen_ansible_advanced_homework.git"
