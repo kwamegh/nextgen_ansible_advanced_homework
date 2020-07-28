@@ -1,2 +1,38 @@
 ---
 # defaults file for osp.servers
+
+osp_instances:
+- name:  app1
+  image: rhel-guest
+  key_name: ansible_ssh
+  flavor: m1.medium
+  security_groups: apps
+  meta: "group=apps, deployment=QA"
+
+- name: app2
+  image: rhel-guest
+  key_name: ansible_ssh
+  flavor: m1.medium
+  security_groups: apps
+  meta: "group= apps, deployment=QA"
+
+- name: db
+  image: rhel-guest
+  key_name: ansible_ssh
+  flavor: m1.medium
+  security_groups: db
+  nics_net-name: int_network
+  meta: "group=appdbs, deployment=QA"
+
+- name: frontend
+  image: rhel-guest
+  key_name: ansible_ssh
+  flavor: m1.medium
+  security_groups: frontend
+  meta: "group=frontends , deployment=QA"
+
+osp_floating_ip:
+- app1
+- app2
+- db
+- frontend
